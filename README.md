@@ -28,7 +28,8 @@ import tls_client
 
 session = tls_client.Session(
     client_identifier="chrome_131",
-    random_tls_extension_order=True
+    random_tls_extension_order=True,
+    is_rotating_proxy=False 
 )
 
 res = session.get(
